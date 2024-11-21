@@ -1,0 +1,15 @@
+{
+  "name": "parcel-experiment",
+  "version": "1.0.0",
+  "description": "一个简单的npm包，用于学习使用npm",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "徐慧婷",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "parcel": "^2.13.0"
+  }
+}
