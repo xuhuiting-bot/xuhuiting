@@ -1,15 +1,32 @@
 {
-  "name": "parcel-experiment",
+  "name": "my-project",
   "version": "1.0.0",
-  "description": "一个简单的npm包，用于学习使用npm",
+  "description": "Should always check if the planet will be hit",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel serve src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "node tests/*.js"
   },
-  "author": "徐慧婷",
-  "license": "ISC",
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "author": "Remy Sharp (https://remysharp.com)",
+  "license": "MIT",
   "dependencies": {
-    "date-fns": "^4.1.0",
-    "parcel": "^2.13.0"
+    "date-fns": "^2.11.1",
+    "format-number": "^3.0.0",
+    "react": ">=16.8",
+    "react-async-hook": "^3.6.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "parcel": "^2.13.1",
+    "postcss": "^8.4.49",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.2",
+    "svgo": "^3.3.2"
   }
 }

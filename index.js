@@ -1,4 +1,11 @@
-import { formatDistanceToNow } from "date-fns";
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/App';
 
-const date = "2003-11-09 10:00:00";
-document.body.textContent = `${formatDistanceToNow(new Date(date))} ago`;
+render(<App />, document.getElementById('app'));
+
+if (module.hot) {
+  module.hot.accept(function() {
+    window.location.reload();
+  });
+}
